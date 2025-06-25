@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pattern Sense - Home</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffaf0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            position: relative;
+            background-image: url("https://img.freepik.com/premium-photo/3d-rendering-flowing-pink-yellow-silklike-fabric-fabric-is-arranged-wavelike-pattern-against-pale-yellow-background_1209158-34287.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 1000px;
+            width: 90%;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 56px;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .hero-text p {
+            font-size: 22px;
+            color: black;
+            line-height: 1.7;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background-color: #fffbe6;
+            border-radius: 16px;
+            padding: 30px 20px;
+            width: 320px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            text-align: left;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .contact-section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .contact-boxes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .contact-box {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 0 12px rgba(0,0,0,0.1);
+            font-size: 18px;
+        }
+
+        form {
+            margin-top: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 15px;
+            margin-top: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #f7b733;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e9a700;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div><strong style="font-size: 22px;">Pattern Sense</strong></div>
+    <div>
+        <a href="/">Welcome</a>
+        <a href="/home">Home</a>
+        <a href="/upload">Predict</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-split" style="display: flex; justify-content: space-between; align-items: center; background-image: url('https://img.freepik.com/premium-photo/3d-rendering-flowing-pink-yellow-silklike-fabric-fabric-is-arranged-wavelike-pattern-against-pale-yellow-background_1209158-34287.jpg'); background-size: cover; background-position: center; height: 100vh; padding: 60px 40px; box-sizing: border-box;">
+    
+    <!-- Left Content -->
+    <div class="hero-left" style="flex: 1; background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 20px; margin-right: 30px;">
+        <h1 style="font-size: 56px; color: black; margin-bottom: 30px;">🌍 Explore the World of Fabric Patterns</h1>
+        <p style="font-size: 22px; color: black; line-height: 1.7;">
+            🔍 Discover how Pattern Sense uses deep learning to recognize fabric types like florals, checks, stripes, and more.  
+            👗 Whether you're a designer, student, or researcher — it's built to help you identify textiles with ease and accuracy.
+        </p>
+    </div>
+    
+    <!-- Right Emojis -->
+    <div class="hero-right" style="flex: 0.5; display: flex; justify-content: center; align-items: center;">
+        <div class="emoji-box" style="background-color: rgba(255, 255, 255, 0.8); padding: 30px; border-radius: 20px; box-shadow: 0 0 15px rgba(0,0,0,0.1);">
+            <div class="emoji-grid" style="display: grid; grid-template-columns: repeat(2, 100px); gap: 30px; font-size: 5rem; text-align: center;">
+                <span title="Floral Pattern">🌸</span>
+                <span title="Thread / Fabric Design">🧵</span>
+                <span title="Artificial Intelligence">🧠</span>
+                <span title="Camera for Scanning">📷</span>
+                <span title="Dress / Fashion Output">👗</span>
+                <span title="Fabric Dataset Samples">🧺</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about" style="background-image: url('https://images.unsplash.com/photo-1612197523746-c4292b9306e4'); background-size: cover; background-position: center; padding: 80px 20px;">
+    
+    <h2 style="text-align:center; font-size: 36px; color: #333; margin-bottom: 40px;">
+        🧵 About the Fabric Pattern Sense Classifier
+    </h2>
+
+    <div class="cards" style="background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 20px;">
+        <div class="card">
+            <h3>🧠 Model Accuracy</h3>
+            <p>Our model achieves high accuracy.  
+            It uses transfer learning with CNNs.  
+            Tested across multiple fabric styles.</p>
+        </div>
+        <div class="card">
+            <h3>🧵 Pattern Variety</h3>
+            <p>Detects floral, dots, checks, and stripes.  
+            Handles simple and complex designs.  
+            Recognizes patterns in real-time images.</p>
+        </div>
+    </div>
+
+    <div class="cards" style="background-color: rgba(255, 255, 255, 0.85); padding: 40px; margin-top: 30px; border-radius: 20px;">
+        <div class="card">
+            <h3>📦 Dataset Used</h3>
+            <p>We use the TFD Textile Dataset.  
+            Contains high-resolution labeled images.  
+            Covers various fabric types and textures.</p>
+        </div>
+        <div class="card">
+            <h3>⚙️ Tech Stack</h3>
+            <p>Built with Flask and TensorFlow.  
+            Model trained using Keras and Python.  
+            Web interface powered by HTML & CSS.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="contact-section" id="contact" style="background-image: url('https://img.freepik.com/free-photo/soft-textile-background-beige-color_23-2148721171.jpg'); background-size: cover; background-position: center; padding: 60px 20px;">
+    <div style="background-color: rgba(255, 255, 255, 0.85); padding: 40px; border-radius: 20px;">
+        <h2>📬 Contact Us</h2>
+        <div class="contact-boxes">
+            <div class="contact-box">
+                <strong>📍 Our Address</strong>
+                <p>Andhra Pradesh, India</p>
+            </div>
+            <div class="contact-box">
+                <strong>✉️ Email Us</strong>
+                <p>patternsense@example.com</p>
+            </div>
+            <div class="contact-box">
+                <strong>📞 Call Us</strong>
+                <p>+91 98765 XXXXX</p>
+            </div>
+        </div>
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pattern Sense - Fabric Pattern Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://img.freepik.com/free-vector/gradient-golden-linear-background-with-abstract-transparent-waves_23-2148948421.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .main-box {
+            background-color: rgb(255, 232, 182);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+            background-color: hwb(41 0% 20% / 0.824);
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        label {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        input[type="file"] {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 25px;
+            border-radius: 6px;
+            background-color: hwb(41 0% 20% / 0.824);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0b7dda;
+        }
+
+        .file-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-box">
+        <h1>🧵 Pattern Sense: Fabric Pattern Classifier</h1>
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <label>Select a fabric image to classify:</label>
+            <div class="file-input">
+                <input type="file" name="file" accept="image/*" required>
+            </div>
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
