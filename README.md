@@ -17,8 +17,13 @@ Watch Demo : https://drive.google.com/file/d/1FlGOm3sOVZfmPp7waAXLGsfHOuMbZF5T/v
 The dataset contains images of 5 fabric pattern categories:
 
 *Floral
+
 *Checks
+
+
 *Stripes
+
+
 *Dots
 *Plain/Solid
 *Each class contains ~160 high-resolution images of fabric patterns.
