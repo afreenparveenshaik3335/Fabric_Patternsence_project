@@ -11,7 +11,7 @@ It is built using transfer learning with MobileNetV2 to achieve high classificat
 ✅ Dataset: TFD Textile Dataset
 
 🔗 Demo Link:
-📽️ https://drive.google.com/file/d/1UrIZTjKhMTg9V_ktF3MM3wJ9PVCXUaDJ/view?usp=drive_link
+📽️ https://drive.google.com/file/d/1FlGOm3sOVZfmPp7waAXLGsfHOuMbZF5T/view
 
 
 
