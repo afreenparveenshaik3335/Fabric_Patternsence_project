@@ -1,61 +1,112 @@
-# Fabric-Pattern-Sense-Classifier
-Pattern Sense - Fabric Pattern Classification Using Deep Learning
-Pattern Sense is a deep learning-based project focused on classifying five types of fabric patterns using image data. This project is part of the SmartInternz Internship program and uses transfer learning with MobileNetV2 to achieve accurate classification.
+🧵 Fabric-Pattern-Sense-Classifier
+
+Pattern Sense – Fabric Pattern Classification Using Deep Learning
+
+Pattern Sense is a deep learning-based project focused on classifying five types of fabric patterns using image data.
+It is built using transfer learning with MobileNetV2 to achieve high classification accuracy.
+
+✅ Part of: SmartInternz Internship Program
+✅ Tech Stack: TensorFlow, Keras, Flask
+✅ Model: MobileNetV2 (pretrained, fine-tuned)
+✅ Dataset: TFD Textile Dataset
 
 🔗 Demo Link:
-Watch Demo : https://drive.google.com/file/d/1FlGOm3sOVZfmPp7waAXLGsfHOuMbZF5T/view
+📽️ Watch Demo on Google Drive
 
-📌 Project Overview
 
-*Project Title: Pattern Sense - AI-Powered Fabric Pattern Classification Using Transfer Learning
-*Domain: Computer Vision, Deep Learning
-*Frameworks: TensorFlow, Keras, Flask
-*Model: MobileNetV2 (Transfer Learning)
-*Dataset: TFD Textile Dataset
 
-📂 Dataset Info
+
+📁 Dataset Info
+
 The dataset contains images of 5 fabric pattern categories:
 
-*Floral
+🌸 Floral
 
-*Checks
+🧵 Checks
+
+🎞️ Stripes
+
+⚪ Dots
+
+🔳 Plain / Solid
 
 
-*Stripes
+Each category contains ~160 high-resolution images.
 
 
-*Dots
-*Plain/Solid
-*Each class contains ~160 high-resolution images of fabric patterns.
+
 
 🧠 Model Architecture
 
-We use MobileNetV2 with transfer learning for feature extraction and a custom fully connected head for classification.
-Input shape: 128x128x3
-Output: 5-class softmax layer
-Optimizer: Adam
-Loss: Categorical Crossentropy
-Metrics: Accuracy
+Base Model: MobileNetV2 (Transfer Learning, pretrained on ImageNet)
 
-🚀 How to Run
-1.Clone the repository:
+Input Shape: 128x128x3
+
+Classification Head: Custom Fully Connected Layers
+
+Output: 5-Class Softmax Layer
+
+Optimizer: Adam
+
+Loss Function: Categorical Crossentropy
+
+Metric: Accuracy
+
+
+
+
+
+🚀 How to Run the Project Locally
+
+1. Clone the repository:
 
 git clone https://github.com/afreenparveenshaik3335/Fabric_Patternsence_project.git
 cd Fabric_Patternsence_project
 
-2.Install dependencies:
+2. Install dependencies:
 
 pip install -r requirements.txt
 
-3.Run the Flask app:
+3. Run the Flask app:
 
 python app.py
 
-4.Open in browser:
+4. Open in browser:
+
 Go to 👉 http://localhost:5000
 
 
-- Contributed by Meghana9160
-- Contributed by Niharika7346
-- Contributed by Shaik-Kabeer-max
 
+
+📂 Project Structure
+
+Fabric_Patternsence_project/
+│
+├── static/
+│   ├── css/
+│   │   └── style.css             # Frontend CSS styling
+│   └── uploads/                  # Uploaded images for prediction
+│
+├── templates/
+│   ├── index.html                # Homepage template
+│   └── result.html               # Results page after prediction
+│
+├── model/
+│   └── fabric_classifier.h5      # Trained MobileNetV2 model
+│
+├── app.py                        # Flask backend application
+├── train_model.ipynb            # Jupyter Notebook for training
+├── requirements.txt             # Python dependencies
+├── README.md                    # Project README
+└── .gitignore                   # Git ignored files
+
+
+
+
+👨‍💻 Contributors
+
+👩‍💻 Meghana9160
+
+👩‍💻 Niharika7346
+
+👨‍💻 Shaik-Kabeer-max
