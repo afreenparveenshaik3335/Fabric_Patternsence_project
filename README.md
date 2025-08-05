@@ -6,8 +6,11 @@ Pattern Sense is a deep learning-based project focused on classifying five types
 It is built using transfer learning with MobileNetV2 to achieve high classification accuracy.
 
 ✅ Part of: SmartInternz Internship Program
+
 ✅ Tech Stack: TensorFlow, Keras, Flask
+
 ✅ Model: MobileNetV2 (pretrained, fine-tuned)
+
 ✅ Dataset: TFD Textile Dataset
 
 🔗 Demo Link:
