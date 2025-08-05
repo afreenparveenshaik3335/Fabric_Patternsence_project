@@ -42,6 +42,13 @@ cd Fabric_Patternsence_project
 
 pip install -r requirements.txt
 
+3.Run the Flask app:
+
+python app.py
+
+4.Open in browser:
+Go to 👉 http://localhost:5000
+
 
 - Contributed by Meghana9160
 - Contributed by Niharika7346
