@@ -11,7 +11,7 @@ It is built using transfer learning with MobileNetV2 to achieve high classificat
 ✅ Dataset: TFD Textile Dataset
 
 🔗 Demo Link:
-📽️ Watch Demo on Google Drive
+📽️ https://drive.google.com/file/d/1UrIZTjKhMTg9V_ktF3MM3wJ9PVCXUaDJ/view?usp=drive_link
 
 
 
@@ -38,19 +38,19 @@ Each category contains ~160 high-resolution images.
 
 🧠 Model Architecture
 
-Base Model: MobileNetV2 (Transfer Learning, pretrained on ImageNet)
+* Base Model: MobileNetV2 (Transfer Learning, pretrained on ImageNet)
 
-Input Shape: 128x128x3
+* Input Shape: 128x128x3
 
-Classification Head: Custom Fully Connected Layers
+* Classification Head: Custom Fully Connected Layers
 
-Output: 5-Class Softmax Layer
+*Output: 5-Class Softmax Layer
 
-Optimizer: Adam
+* Optimizer: Adam
 
-Loss Function: Categorical Crossentropy
+* Loss Function: Categorical Crossentropy
 
-Metric: Accuracy
+* Metric: Accuracy
 
 
 
